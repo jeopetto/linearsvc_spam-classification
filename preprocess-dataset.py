@@ -40,8 +40,7 @@ spell = Speller (lang='en')
 theData = spell(theData)
 
 # Eliminar stopwords do dataset
-stopwords = nltk.corpus.stopwords.words('portuguese')
-
+stopwords = nltk.corpus.stopwords.words('english')
 theData = [x for x in word_tokenize(theData) if x not in stopwords]
 
 # Realizar stemmerização (radicalização)
