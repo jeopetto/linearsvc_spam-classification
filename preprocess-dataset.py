@@ -54,7 +54,7 @@ theData['label'] = theData['label'].map({'ham': 0, 'spam': 1})
 # DIVISÃO DO DATASET EM: CONJUNTO DE TREINO E CONJUNTO DE AVALIAÇão
 x = theData['message']
 y = theData['label']
-x_train, x_test, y_train, y_test = train_test_split(theData['message'], theData['label'], test_size = 0.2)
+x_train, x_test, y_train, y_test = train_test_split(theData['message'], theData['label'], test_size = 0.3)
 '''
 X_train: conjunto de treino (mensagens)
 y_train: conjunto de treino (etiquetas)
