@@ -12,9 +12,6 @@ data = pd.read_csv('preprocessed_dataset.csv')
 X = data['processed_text']
 y = data['label']
 
-# Preencher linhas nulas
-X = X.fillna('')
-
 # Converter texto em features numéricas usando TF-IDF
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(X)
@@ -34,5 +31,5 @@ print("\nRelatório de Classificação:")
 print(classification_report(y_test, y_pred))
 
 # Salvar o modelo treinado e o vectorizer
-joblib.dump(svm, 'spam_classifier_model1.joblib')
-joblib.dump(vectorizer, 'vectorizer1.joblib')
+joblib.dump(svm, 'spam_classifier_model.joblib')
+joblib.dump(vectorizer, 'vectorizer.joblib')
