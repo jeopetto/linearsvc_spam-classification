@@ -18,8 +18,8 @@ def preprocess_dataset(df, language):
     def preprocess_text(text):
         # Converter para letras minúsculas
         text = text.lower()
-        # Remover caracteres especiais, links e números
-        text = re.sub(r'http\S+|www\S+|[^a-zA-Z\s]', '', text)
+        # Remover caracteres especiais não relevantes
+        text = re.sub(r'[^\w\s@$!%#?&/\\]', '', text)
         # Tokenizar o texto
         tokens = word_tokenize(text)
         # Remover stopwords
