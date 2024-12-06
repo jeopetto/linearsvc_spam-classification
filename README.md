@@ -1,4 +1,4 @@
-# Classificação de E-mails como Spam ou Não-Spam usando LinearSVC
+# Classificação de E-mails como Spam ou Não-Spam usando LinearSVC.
 
 Este projeto implementa um sistema de classificação de e-mails baseado no algoritmo de Machine Learning **LinearSVC** uma versão mais otimizada e focada em problemas lineares do **Support Vector Machine (SVM)**. Ele processa mensagens em tempo real e as classifica como spam ou não-spam, integrando-se à **API do Gmail**. O modelo foi projetado para operar em inglês, português e espanhol e utiliza técnicas de pré-processamento de texto.
 
